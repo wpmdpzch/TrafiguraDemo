@@ -732,3 +732,68 @@ Caused by: java.lang.Exception: aaaaaaaa
 2020-10-13 12:30:01.556 [Thread-5] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
 2020-10-13 12:30:01.701 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2020-10-13 12:30:01.721 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-10-13 12:46:26.417 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [controller.TransactionControllerTest], using SpringBootContextLoader
+2020-10-13 12:46:26.427 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [controller.TransactionControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-10-13 12:46:26.733 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-10-13 12:46:26.776 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@27bcb4ad, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4357524b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@104a287c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@64dc86c6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@26874f2c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5f3b84bd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1e734eee, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1e191150, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2fbd390, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@166b11e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5e68be2, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5323999f]
+2020-10-13 12:46:27.867 [main] INFO  controller.TransactionControllerTest - Starting TransactionControllerTest on pengmingwang-Latitude-5490 with PID 30005 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/TrafiguraDemo/transaction)
+2020-10-13 12:46:27.873 [main] INFO  controller.TransactionControllerTest - The following profiles are active: dev
+2020-10-13 12:46:29.151 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 12:46:29.276 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 109ms. Found 3 repository interfaces.
+2020-10-13 12:46:30.074 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$745a8613] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 12:46:30.423 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 12:46:30.910 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 12:46:31.039 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 12:46:31.160 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 12:46:31.162 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 12:46:31.324 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 12:46:31.531 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 12:46:32.685 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@61e1bcdc'
+2020-10-13 12:46:32.688 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:46:33.628 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 12:46:33.941 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 12:46:34.573 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:46:35.017 [main] INFO  o.s.b.test.mock.web.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2020-10-13 12:46:35.017 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2020-10-13 12:46:35.037 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Completed initialization in 20 ms
+2020-10-13 12:46:35.068 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 12:46:35.109 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 12:46:35.164 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 12:46:35.424 [main] INFO  controller.TransactionControllerTest - Started TransactionControllerTest in 8.221 seconds (JVM running for 10.119)
+2020-10-13 12:46:35.523 [main] INFO  o.s.b.test.mock.web.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2020-10-13 12:46:35.524 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2020-10-13 12:46:35.528 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Completed initialization in 4 ms
+2020-10-13 12:46:35.758 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:35.823 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-10-13 12:46:36.156 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.180 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.227 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.240 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.250 [main] INFO  c.t.transaction.controller.TransactionController - Start method getPositionList
+2020-10-13 12:46:36.302 [main] INFO  c.t.transaction.controller.TransactionController - Start method getTranactionList
+2020-10-13 12:46:36.327 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.347 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.380 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.395 [main] ERROR c.t.t.service.impl.TransactionServiceImpl - Transaction not exist with tradeId:
+2020-10-13 12:46:36.404 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.408 [main] ERROR c.t.t.service.impl.TransactionServiceImpl - Transaction not exist with tradeId:
+2020-10-13 12:46:36.414 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.437 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.448 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.452 [main] ERROR c.t.t.service.impl.TransactionServiceImpl - Operation type error:
+2020-10-13 12:46:36.455 [main] INFO  c.t.transaction.controller.TransactionController - Start method getPositionList
+2020-10-13 12:46:36.463 [main] INFO  c.t.transaction.controller.TransactionController - Start method getTranactionList
+2020-10-13 12:46:36.480 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.495 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.512 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.523 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.535 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:46:36.538 [main] ERROR c.t.t.service.impl.TransactionServiceImpl - Operation type error:
+2020-10-13 12:46:36.543 [main] INFO  c.t.transaction.controller.TransactionController - Start method getPositionBySecurityCode
+2020-10-13 12:46:36.592 [Thread-5] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:46:36.610 [Thread-5] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:46:36.613 [Thread-5] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 12:46:36.734 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 12:46:36.755 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
