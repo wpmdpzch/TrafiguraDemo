@@ -1,0 +1,734 @@
+2020-10-13 10:59:29.717 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [controller.TransactionControllerTest], using SpringBootContextLoader
+2020-10-13 10:59:29.731 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [controller.TransactionControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-10-13 10:59:29.976 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-10-13 10:59:30.000 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@15de0b3c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@489115ef, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3857f613, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@198b6731, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7c6908d7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3c9754d8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3bf7ca37, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@79079097, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4d1c00d0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4b2bac3f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4e08711f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@bcec361]
+2020-10-13 10:59:30.823 [main] INFO  controller.TransactionControllerTest - Starting TransactionControllerTest on pengmingwang-Latitude-5490 with PID 29965 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/transaction)
+2020-10-13 10:59:30.823 [main] INFO  controller.TransactionControllerTest - The following profiles are active: dev
+2020-10-13 10:59:32.108 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 10:59:32.192 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 72ms. Found 3 repository interfaces.
+2020-10-13 10:59:32.658 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ad2ad3d0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 10:59:32.893 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 10:59:33.219 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 10:59:33.303 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 10:59:33.386 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 10:59:33.388 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 10:59:33.504 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 10:59:33.644 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 10:59:34.351 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@485deee1'
+2020-10-13 10:59:34.353 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 10:59:35.074 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 10:59:35.322 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 10:59:35.973 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 10:59:36.401 [main] INFO  o.s.b.test.mock.web.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2020-10-13 10:59:36.402 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2020-10-13 10:59:36.418 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Completed initialization in 16 ms
+2020-10-13 10:59:36.443 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 10:59:36.472 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 10:59:36.500 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 10:59:36.693 [main] INFO  controller.TransactionControllerTest - Started TransactionControllerTest in 6.399 seconds (JVM running for 7.877)
+2020-10-13 10:59:36.761 [main] INFO  o.s.b.test.mock.web.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2020-10-13 10:59:36.761 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2020-10-13 10:59:36.765 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Completed initialization in 4 ms
+2020-10-13 10:59:36.954 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:36.990 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-10-13 10:59:37.227 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.248 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.285 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.294 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.311 [main] INFO  c.t.transaction.controller.TransactionController - Start method getPositionList
+2020-10-13 10:59:37.355 [main] INFO  c.t.transaction.controller.TransactionController - Start method getTranactionList
+2020-10-13 10:59:37.367 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.375 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.394 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.399 [main] ERROR c.t.t.service.impl.TransactionDataServiceImpl - transaction not exist for tradId:【4】
+2020-10-13 10:59:37.407 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.408 [main] ERROR c.t.t.service.impl.TransactionDataServiceImpl - transaction not exist for tradId:【4】
+2020-10-13 10:59:37.412 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.429 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.436 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.440 [main] ERROR c.t.t.service.impl.TransactionDataServiceImpl - operation type error:【UPDATE】
+2020-10-13 10:59:37.444 [main] INFO  c.t.transaction.controller.TransactionController - Start method getPositionList
+2020-10-13 10:59:37.454 [main] INFO  c.t.transaction.controller.TransactionController - Start method getTranactionList
+2020-10-13 10:59:37.462 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.476 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.484 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.493 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.506 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 10:59:37.508 [main] ERROR c.t.t.service.impl.TransactionDataServiceImpl - operation type error:【UPDATE】
+2020-10-13 10:59:37.511 [main] INFO  c.t.transaction.controller.TransactionController - Start method getPositionBySecurityCode
+2020-10-13 10:59:37.527 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 10:59:37.533 [Thread-4] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 10:59:37.533 [Thread-4] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 10:59:37.543 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 10:59:37.564 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-10-13 10:59:46.597 [main] INFO  TransactionApplication - Starting TransactionApplication on pengmingwang-Latitude-5490 with PID 30228 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/transaction)
+2020-10-13 10:59:46.601 [main] INFO  TransactionApplication - The following profiles are active: dev
+2020-10-13 10:59:47.496 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 10:59:47.569 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66ms. Found 3 repository interfaces.
+2020-10-13 10:59:47.822 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d4b0b884] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 10:59:48.023 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-10-13 10:59:48.037 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-13 10:59:48.050 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-13 10:59:48.050 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-13 10:59:48.125 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-13 10:59:48.125 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1480 ms
+2020-10-13 10:59:48.284 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 10:59:48.490 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 10:59:48.521 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 10:59:48.560 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 10:59:48.561 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 10:59:48.636 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 10:59:48.766 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 10:59:49.235 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@573aeab2'
+2020-10-13 10:59:49.237 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 10:59:49.699 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 10:59:49.827 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 10:59:49.946 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 10:59:50.101 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 10:59:50.115 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 10:59:50.137 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 10:59:50.264 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-13 10:59:50.278 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 10:59:50.280 [main] INFO  TransactionApplication - Started TransactionApplication in 4.059 seconds (JVM running for 4.594)
+2020-10-13 11:01:25.228 [Thread-12] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 11:01:25.231 [Thread-12] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 11:01:25.231 [Thread-12] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 11:01:25.240 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 11:01:25.260 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-10-13 11:01:29.300 [main] INFO  TransactionApplication - Starting TransactionApplication on pengmingwang-Latitude-5490 with PID 31291 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/transaction)
+2020-10-13 11:01:29.303 [main] INFO  TransactionApplication - The following profiles are active: dev
+2020-10-13 11:01:30.263 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 11:01:30.330 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61ms. Found 3 repository interfaces.
+2020-10-13 11:01:30.602 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7cd4d130] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 11:01:30.783 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-10-13 11:01:30.793 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-13 11:01:30.799 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-13 11:01:30.800 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-13 11:01:30.880 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-13 11:01:30.880 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1521 ms
+2020-10-13 11:01:31.002 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 11:01:31.196 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 11:01:31.231 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 11:01:31.271 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 11:01:31.272 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 11:01:31.350 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 11:01:31.434 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 11:01:31.861 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@6568f998'
+2020-10-13 11:01:31.863 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 11:01:32.334 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 11:01:32.445 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 11:01:32.551 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 11:01:32.676 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 11:01:32.689 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 11:01:32.709 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 11:01:32.826 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-13 11:01:32.837 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 11:01:32.839 [main] INFO  TransactionApplication - Started TransactionApplication in 3.901 seconds (JVM running for 4.437)
+2020-10-13 11:01:39.631 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 11:01:39.632 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-13 11:01:39.639 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-10-13 11:02:02.929 [http-nio-8080-exec-10] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 11:02:02.960 [http-nio-8080-exec-10] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-10-13 11:02:12.514 [http-nio-8080-exec-1] INFO  c.t.transaction.controller.TransactionController - Start method getPositionList
+2020-10-13 11:03:00.202 [Thread-12] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 11:03:00.205 [Thread-12] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 11:03:00.205 [Thread-12] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 11:03:00.214 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 11:03:00.230 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-10-13 11:03:05.493 [main] INFO  TransactionApplication - Starting TransactionApplication on pengmingwang-Latitude-5490 with PID 32390 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/transaction)
+2020-10-13 11:03:05.496 [main] INFO  TransactionApplication - The following profiles are active: dev
+2020-10-13 11:03:06.438 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 11:03:06.520 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74ms. Found 3 repository interfaces.
+2020-10-13 11:03:06.818 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f4361a45] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 11:03:07.028 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-10-13 11:03:07.041 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-13 11:03:07.051 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-13 11:03:07.051 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-13 11:03:07.133 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-13 11:03:07.133 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1593 ms
+2020-10-13 11:03:07.305 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 11:03:07.530 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 11:03:07.569 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 11:03:07.611 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 11:03:07.612 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 11:03:07.695 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 11:03:07.786 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 11:03:08.242 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@2f15a964'
+2020-10-13 11:03:08.245 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 11:03:08.767 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 11:03:08.893 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 11:03:09.024 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 11:03:09.173 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 11:03:09.187 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 11:03:09.212 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 11:03:09.351 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-13 11:03:09.365 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 11:03:09.366 [main] INFO  TransactionApplication - Started TransactionApplication in 4.243 seconds (JVM running for 4.829)
+2020-10-13 11:03:14.105 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 11:03:14.105 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-13 11:03:14.113 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-10-13 11:06:02.859 [http-nio-8080-exec-5] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 11:06:02.891 [http-nio-8080-exec-5] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-10-13 11:06:43.176 [http-nio-8080-exec-6] INFO  c.t.transaction.controller.TransactionController - Start method getPositionList
+2020-10-13 11:06:55.110 [http-nio-8080-exec-7] INFO  c.t.transaction.controller.TransactionController - Start method getPositionBySecurityCode
+2020-10-13 11:07:03.455 [http-nio-8080-exec-8] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 11:07:39.991 [http-nio-8080-exec-9] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 11:07:47.162 [http-nio-8080-exec-10] INFO  c.t.transaction.controller.TransactionController - Start method getPositionBySecurityCode
+2020-10-13 11:07:56.189 [http-nio-8080-exec-1] INFO  c.t.transaction.controller.TransactionController - Start method getPositionList
+2020-10-13 11:08:08.931 [http-nio-8080-exec-2] INFO  c.t.transaction.controller.TransactionController - Start method getTranactionList
+2020-10-13 11:21:03.245 [Thread-13] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 11:21:03.247 [Thread-13] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 11:21:03.248 [Thread-13] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 11:21:03.254 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 11:21:03.479 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-10-13 11:22:23.342 [main] INFO  com.trafigura.transaction.TransactionApplication - Starting TransactionApplication on pengmingwang-Latitude-5490 with PID 11557 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/transaction)
+2020-10-13 11:22:23.344 [main] INFO  com.trafigura.transaction.TransactionApplication - The following profiles are active: dev
+2020-10-13 11:22:24.280 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 11:22:24.351 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65ms. Found 3 repository interfaces.
+2020-10-13 11:22:24.687 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$243ad9a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 11:22:24.873 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-10-13 11:22:24.883 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-13 11:22:24.891 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-13 11:22:24.892 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-13 11:22:24.982 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-13 11:22:24.982 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1593 ms
+2020-10-13 11:22:25.124 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 11:22:25.323 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 11:22:25.365 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 11:22:25.409 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 11:22:25.410 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 11:22:25.487 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 11:22:25.602 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 11:22:26.124 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@47fb7ec9'
+2020-10-13 11:22:26.126 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 11:22:26.587 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 11:22:26.726 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 11:22:26.840 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 11:22:26.963 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 11:22:26.975 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 11:22:26.995 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 11:22:27.010 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-13 11:22:27.021 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 11:22:27.022 [main] INFO  com.trafigura.transaction.TransactionApplication - Started TransactionApplication in 4.033 seconds (JVM running for 4.645)
+2020-10-13 11:22:52.141 [Thread-12] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 11:22:52.144 [Thread-12] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 11:22:52.145 [Thread-12] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 11:22:52.154 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 11:22:52.172 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-10-13 11:22:56.156 [main] INFO  com.trafigura.transaction.TransactionApplication - Starting TransactionApplication on pengmingwang-Latitude-5490 with PID 12040 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/transaction)
+2020-10-13 11:22:56.158 [main] INFO  com.trafigura.transaction.TransactionApplication - The following profiles are active: dev
+2020-10-13 11:22:57.107 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 11:22:57.187 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74ms. Found 3 repository interfaces.
+2020-10-13 11:22:57.467 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3d0aced] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 11:22:57.660 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-10-13 11:22:57.673 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-13 11:22:57.682 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-13 11:22:57.682 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-13 11:22:57.758 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-13 11:22:57.758 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1556 ms
+2020-10-13 11:22:57.898 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 11:22:58.093 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 11:22:58.125 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 11:22:58.164 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 11:22:58.164 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 11:22:58.237 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 11:22:58.314 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 11:22:58.716 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@626c569b'
+2020-10-13 11:22:58.718 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 11:22:59.248 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 11:22:59.365 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 11:22:59.473 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 11:22:59.612 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 11:22:59.624 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 11:22:59.646 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 11:22:59.769 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-13 11:22:59.782 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 11:22:59.785 [main] INFO  com.trafigura.transaction.TransactionApplication - Started TransactionApplication in 4.052 seconds (JVM running for 4.666)
+2020-10-13 11:23:02.097 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 11:23:02.098 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-13 11:23:02.106 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-10-13 11:23:21.107 [http-nio-8080-exec-6] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 11:23:21.140 [http-nio-8080-exec-6] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-10-13 11:23:21.269 [http-nio-8080-exec-6] ERROR c.t.t.exception.RestControllerExceptionHandler - handleException
+java.lang.reflect.UndeclaredThrowableException: null
+	at com.trafigura.transaction.service.impl.TransactionServiceImpl$$EnhancerBySpringCGLIB$$614a632f.saveTransaction(<generated>)
+	at com.trafigura.transaction.controller.TransactionController.saveTransactionByDto(TransactionController.java:40)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:836)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1747)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.Exception: aaaaaaaa
+	at com.trafigura.transaction.service.impl.TransactionServiceImpl.saveTransaction(TransactionServiceImpl.java:119)
+	at com.trafigura.transaction.service.impl.TransactionServiceImpl$$FastClassBySpringCGLIB$$f515edc4.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:295)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	... 56 common frames omitted
+2020-10-13 11:28:00.676 [Thread-12] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 11:28:00.679 [Thread-12] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 11:28:00.680 [Thread-12] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 11:28:00.689 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 11:28:00.917 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-10-13 11:28:06.244 [main] INFO  com.trafigura.transaction.TransactionApplication - Starting TransactionApplication on pengmingwang-Latitude-5490 with PID 15110 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/transaction)
+2020-10-13 11:28:06.249 [main] INFO  com.trafigura.transaction.TransactionApplication - The following profiles are active: dev
+2020-10-13 11:28:07.230 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 11:28:07.303 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65ms. Found 3 repository interfaces.
+2020-10-13 11:28:07.621 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d4b0b884] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 11:28:07.831 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-10-13 11:28:07.844 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-13 11:28:07.854 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-13 11:28:07.854 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-13 11:28:07.933 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-13 11:28:07.934 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1643 ms
+2020-10-13 11:28:08.105 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 11:28:08.323 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 11:28:08.358 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 11:28:08.400 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 11:28:08.401 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 11:28:08.489 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 11:28:08.577 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 11:28:09.058 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@573aeab2'
+2020-10-13 11:28:09.060 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 11:28:09.568 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 11:28:09.689 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 11:28:09.842 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 11:28:09.995 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 11:28:10.010 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 11:28:10.043 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 11:28:10.188 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-13 11:28:10.201 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 11:28:10.203 [main] INFO  com.trafigura.transaction.TransactionApplication - Started TransactionApplication in 4.344 seconds (JVM running for 5.05)
+2020-10-13 11:32:41.230 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 11:32:41.230 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-13 11:32:41.244 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2020-10-13 11:40:42.911 [http-nio-8080-exec-3] INFO  c.t.transaction.controller.TransactionController - Start method getTranactionList
+2020-10-13 11:40:42.955 [http-nio-8080-exec-3] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-10-13 11:41:35.073 [Thread-13] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 11:41:35.075 [Thread-13] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 11:41:35.075 [Thread-13] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 11:41:35.085 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 11:41:35.109 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-10-13 11:41:39.125 [main] INFO  com.trafigura.transaction.TransactionApplication - Starting TransactionApplication on pengmingwang-Latitude-5490 with PID 23711 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/transaction)
+2020-10-13 11:41:39.128 [main] INFO  com.trafigura.transaction.TransactionApplication - The following profiles are active: dev
+2020-10-13 11:41:40.052 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 11:41:40.130 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70ms. Found 3 repository interfaces.
+2020-10-13 11:41:40.445 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8584accd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 11:41:40.658 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-10-13 11:41:40.671 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-13 11:41:40.679 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-13 11:41:40.680 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-13 11:41:40.761 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-13 11:41:40.761 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1592 ms
+2020-10-13 11:41:40.927 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 11:41:41.171 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 11:41:41.211 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 11:41:41.275 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 11:41:41.276 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 11:41:41.403 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 11:41:41.534 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 11:41:42.167 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@165614f5'
+2020-10-13 11:41:42.169 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 11:41:42.707 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 11:41:42.829 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 11:41:42.942 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 11:41:43.087 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 11:41:43.102 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 11:41:43.125 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 11:41:43.264 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-13 11:41:43.277 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 11:41:43.279 [main] INFO  com.trafigura.transaction.TransactionApplication - Started TransactionApplication in 4.507 seconds (JVM running for 5.062)
+2020-10-13 11:41:51.896 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 11:41:51.897 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-13 11:41:51.905 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-10-13 11:43:27.316 [http-nio-8080-exec-4] INFO  c.t.transaction.controller.TransactionController - Start method getTranactionList
+2020-10-13 11:43:27.345 [http-nio-8080-exec-4] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-10-13 11:50:03.997 [http-nio-8080-exec-2] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 11:50:43.078 [http-nio-8080-exec-5] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 11:53:32.675 [http-nio-8080-exec-7] INFO  c.t.transaction.controller.TransactionController - Start method getTranactionList
+2020-10-13 11:54:52.452 [http-nio-8080-exec-9] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 11:59:04.967 [http-nio-8080-exec-1] INFO  c.t.transaction.controller.TransactionController - Start method getPositionList
+2020-10-13 12:01:54.312 [Thread-13] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:01:54.314 [Thread-13] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:01:54.315 [Thread-13] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 12:01:54.325 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 12:01:54.559 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-10-13 12:01:58.150 [main] INFO  com.trafigura.transaction.TransactionApplication - Starting TransactionApplication on pengmingwang-Latitude-5490 with PID 2670 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/transaction)
+2020-10-13 12:01:58.153 [main] INFO  com.trafigura.transaction.TransactionApplication - The following profiles are active: dev
+2020-10-13 12:01:59.434 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 12:01:59.537 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93ms. Found 3 repository interfaces.
+2020-10-13 12:01:59.865 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f318939f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 12:02:00.139 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-10-13 12:02:00.154 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-13 12:02:00.166 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-13 12:02:00.166 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-13 12:02:00.279 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-13 12:02:00.279 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2030 ms
+2020-10-13 12:02:00.466 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 12:02:00.741 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 12:02:00.791 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 12:02:00.845 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 12:02:00.846 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 12:02:00.951 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 12:02:01.056 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 12:02:01.627 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@27da994b'
+2020-10-13 12:02:01.630 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:02:02.222 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 12:02:02.372 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 12:02:02.508 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:02:02.657 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 12:02:02.672 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 12:02:02.695 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 12:02:02.821 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-13 12:02:02.835 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 12:02:02.836 [main] INFO  com.trafigura.transaction.TransactionApplication - Started TransactionApplication in 5.11 seconds (JVM running for 5.867)
+2020-10-13 12:02:03.022 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 12:02:03.022 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-13 12:02:03.152 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 130 ms
+2020-10-13 12:02:28.343 [http-nio-8080-exec-10] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:02:28.370 [http-nio-8080-exec-10] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-10-13 12:02:47.561 [http-nio-8080-exec-1] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:03:13.953 [http-nio-8080-exec-4] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:03:37.544 [http-nio-8080-exec-2] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:03:59.613 [http-nio-8080-exec-5] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:04:29.583 [Thread-15] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:04:29.585 [Thread-15] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:04:29.585 [Thread-15] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 12:04:29.592 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 12:04:29.818 [Thread-15] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-10-13 12:04:32.486 [main] INFO  com.trafigura.transaction.TransactionApplication - Starting TransactionApplication on pengmingwang-Latitude-5490 with PID 4675 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/transaction)
+2020-10-13 12:04:32.488 [main] INFO  com.trafigura.transaction.TransactionApplication - The following profiles are active: dev
+2020-10-13 12:04:33.351 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 12:04:33.410 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53ms. Found 3 repository interfaces.
+2020-10-13 12:04:33.636 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6fd69fe2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 12:04:33.823 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-10-13 12:04:33.833 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-13 12:04:33.840 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-13 12:04:33.841 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-13 12:04:33.913 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-13 12:04:33.913 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1377 ms
+2020-10-13 12:04:34.035 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 12:04:34.223 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 12:04:34.255 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 12:04:34.292 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 12:04:34.293 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 12:04:34.364 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 12:04:34.439 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 12:04:34.826 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1b46392c'
+2020-10-13 12:04:34.828 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:04:35.265 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 12:04:35.394 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 12:04:35.495 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:04:35.613 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 12:04:35.625 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 12:04:35.645 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 12:04:35.757 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-13 12:04:35.768 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 12:04:35.770 [main] INFO  com.trafigura.transaction.TransactionApplication - Started TransactionApplication in 3.666 seconds (JVM running for 4.16)
+2020-10-13 12:04:40.735 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 12:04:40.735 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-13 12:04:40.742 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2020-10-13 12:04:59.018 [http-nio-8080-exec-9] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:04:59.046 [http-nio-8080-exec-9] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-10-13 12:05:22.247 [http-nio-8080-exec-10] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:05:42.539 [http-nio-8080-exec-4] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:06:00.826 [http-nio-8080-exec-3] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:06:22.274 [Thread-12] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:06:22.277 [Thread-12] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:06:22.277 [Thread-12] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 12:06:22.284 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 12:06:22.307 [Thread-12] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-10-13 12:06:25.132 [main] INFO  com.trafigura.transaction.TransactionApplication - Starting TransactionApplication on pengmingwang-Latitude-5490 with PID 5831 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/transaction)
+2020-10-13 12:06:25.134 [main] INFO  com.trafigura.transaction.TransactionApplication - The following profiles are active: dev
+2020-10-13 12:06:26.168 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 12:06:26.242 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66ms. Found 3 repository interfaces.
+2020-10-13 12:06:26.546 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$520ca1a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 12:06:26.758 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-10-13 12:06:26.769 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-13 12:06:26.778 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-13 12:06:26.778 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-13 12:06:26.854 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-13 12:06:26.854 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1671 ms
+2020-10-13 12:06:27.015 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 12:06:27.238 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 12:06:27.275 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 12:06:27.318 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 12:06:27.319 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 12:06:27.406 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 12:06:27.496 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 12:06:27.970 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@c14e5a5'
+2020-10-13 12:06:27.973 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:06:28.486 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 12:06:28.619 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 12:06:28.755 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:06:28.902 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 12:06:28.917 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 12:06:28.944 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 12:06:29.080 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-13 12:06:29.094 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 12:06:29.095 [main] INFO  com.trafigura.transaction.TransactionApplication - Started TransactionApplication in 4.347 seconds (JVM running for 4.892)
+2020-10-13 12:06:31.135 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 12:06:31.135 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-13 12:06:31.144 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2020-10-13 12:06:51.602 [http-nio-8080-exec-9] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:06:51.631 [http-nio-8080-exec-9] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-10-13 12:07:14.406 [http-nio-8080-exec-10] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:07:37.341 [http-nio-8080-exec-3] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:07:58.988 [http-nio-8080-exec-4] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:08:20.796 [http-nio-8080-exec-5] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:08:41.127 [http-nio-8080-exec-6] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:08:50.964 [http-nio-8080-exec-7] INFO  c.t.transaction.controller.TransactionController - Start method getTranactionList
+2020-10-13 12:09:47.636 [http-nio-8080-exec-8] INFO  c.t.transaction.controller.TransactionController - Start method getPositionList
+2020-10-13 12:11:09.025 [Thread-13] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:11:09.028 [Thread-13] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:11:09.028 [Thread-13] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 12:11:09.035 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 12:11:09.276 [Thread-13] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-10-13 12:16:38.130 [main] INFO  com.trafigura.transaction.TransactionApplication - Starting TransactionApplication on pengmingwang-Latitude-5490 with PID 11512 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/transaction)
+2020-10-13 12:16:38.133 [main] INFO  com.trafigura.transaction.TransactionApplication - The following profiles are active: dev
+2020-10-13 12:16:38.965 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 12:16:39.028 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57ms. Found 3 repository interfaces.
+2020-10-13 12:16:39.304 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$21d0091] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 12:16:39.484 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-10-13 12:16:39.494 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-10-13 12:16:39.501 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-13 12:16:39.502 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.19]
+2020-10-13 12:16:39.573 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-13 12:16:39.573 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1394 ms
+2020-10-13 12:16:39.708 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 12:16:39.894 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 12:16:39.925 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 12:16:39.963 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 12:16:39.964 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 12:16:40.037 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 12:16:40.114 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 12:16:40.514 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@175581eb'
+2020-10-13 12:16:40.516 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:16:40.949 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 12:16:41.058 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 12:16:41.161 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:16:41.282 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 12:16:41.294 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 12:16:41.314 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 12:16:41.427 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-10-13 12:16:41.438 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-13 12:16:41.439 [main] INFO  com.trafigura.transaction.TransactionApplication - Started TransactionApplication in 3.672 seconds (JVM running for 4.168)
+2020-10-13 12:16:51.908 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-13 12:16:51.909 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-13 12:16:52.041 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 132 ms
+2020-10-13 12:16:52.134 [http-nio-8080-exec-1] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:16:52.160 [http-nio-8080-exec-1] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-10-13 12:16:58.118 [http-nio-8080-exec-2] INFO  c.t.transaction.controller.TransactionController - Start method getTranactionList
+2020-10-13 12:17:02.295 [http-nio-8080-exec-3] INFO  c.t.transaction.controller.TransactionController - Start method getPositionList
+2020-10-13 12:20:51.023 [Thread-11] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:20:51.030 [Thread-11] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:20:51.031 [Thread-11] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 12:20:51.051 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 12:20:51.290 [Thread-11] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-10-13 12:22:11.328 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [controller.TransactionControllerTest], using SpringBootContextLoader
+2020-10-13 12:22:11.345 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [controller.TransactionControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-10-13 12:22:11.759 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-10-13 12:22:11.815 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@660b1a9d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6fb0261e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d6b532f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2f4d01b6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@112c2930, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7f426ddd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28e7bb31, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6fe04f2a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1f758e4f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@733534f9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@661e279d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@beabd6b]
+2020-10-13 12:22:13.390 [main] INFO  controller.TransactionControllerTest - Starting TransactionControllerTest on pengmingwang-Latitude-5490 with PID 15190 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/transaction)
+2020-10-13 12:22:13.391 [main] INFO  controller.TransactionControllerTest - The following profiles are active: dev
+2020-10-13 12:22:15.181 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 12:22:15.433 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 203ms. Found 3 repository interfaces.
+2020-10-13 12:22:16.607 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94e28941] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 12:22:17.072 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 12:22:17.762 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 12:22:17.971 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 12:22:18.157 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 12:22:18.160 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 12:22:18.558 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 12:22:18.972 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 12:22:20.932 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@27baf610'
+2020-10-13 12:22:20.943 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:22:22.679 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 12:22:23.563 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 12:22:25.363 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:22:26.379 [main] INFO  o.s.b.test.mock.web.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2020-10-13 12:22:26.379 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2020-10-13 12:22:26.427 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Completed initialization in 47 ms
+2020-10-13 12:22:26.484 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 12:22:26.628 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 12:22:26.776 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 12:22:27.295 [main] INFO  controller.TransactionControllerTest - Started TransactionControllerTest in 14.744 seconds (JVM running for 17.151)
+2020-10-13 12:22:27.540 [main] INFO  o.s.b.test.mock.web.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2020-10-13 12:22:27.541 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2020-10-13 12:22:27.549 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Completed initialization in 8 ms
+2020-10-13 12:22:28.050 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:28.144 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-10-13 12:22:28.894 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:28.945 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.013 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.034 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.060 [main] INFO  c.t.transaction.controller.TransactionController - Start method getPositionList
+2020-10-13 12:22:29.148 [main] INFO  c.t.transaction.controller.TransactionController - Start method getTranactionList
+2020-10-13 12:22:29.229 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.278 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.368 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.389 [main] ERROR c.t.t.service.impl.TransactionServiceImpl - Transaction not exist with tradeId:
+2020-10-13 12:22:29.401 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.419 [main] ERROR c.t.t.service.impl.TransactionServiceImpl - Transaction not exist with tradeId:
+2020-10-13 12:22:29.445 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.514 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.546 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.570 [main] ERROR c.t.t.service.impl.TransactionServiceImpl - Operation type error:
+2020-10-13 12:22:29.587 [main] INFO  c.t.transaction.controller.TransactionController - Start method getPositionList
+2020-10-13 12:22:29.624 [main] INFO  c.t.transaction.controller.TransactionController - Start method getTranactionList
+2020-10-13 12:22:29.670 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.711 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.761 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.810 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.830 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:22:29.834 [main] ERROR c.t.t.service.impl.TransactionServiceImpl - Operation type error:
+2020-10-13 12:22:29.848 [main] INFO  c.t.transaction.controller.TransactionController - Start method getPositionBySecurityCode
+2020-10-13 12:22:30.181 [Thread-5] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:22:30.187 [Thread-5] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:22:30.208 [Thread-5] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 12:22:30.269 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 12:22:30.326 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2020-10-13 12:29:50.222 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [controller.TransactionControllerTest], using SpringBootContextLoader
+2020-10-13 12:29:50.237 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [controller.TransactionControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-10-13 12:29:50.566 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-10-13 12:29:50.607 [main] INFO  o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@660b1a9d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6fb0261e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d6b532f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2f4d01b6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@112c2930, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7f426ddd, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28e7bb31, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6fe04f2a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1f758e4f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@733534f9, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@661e279d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@beabd6b]
+2020-10-13 12:29:51.735 [main] INFO  controller.TransactionControllerTest - Starting TransactionControllerTest on pengmingwang-Latitude-5490 with PID 19833 (started by pengmingwang in /home/pengmingwang/project/exam/FW_ Programming/toke/transaction-wpm/transaction)
+2020-10-13 12:29:51.735 [main] INFO  controller.TransactionControllerTest - The following profiles are active: dev
+2020-10-13 12:29:53.026 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-10-13 12:29:53.148 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 108ms. Found 3 repository interfaces.
+2020-10-13 12:29:54.017 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$15266174] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-13 12:29:54.382 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2020-10-13 12:29:54.929 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2020-10-13 12:29:55.075 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-10-13 12:29:55.206 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.10.Final}
+2020-10-13 12:29:55.209 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2020-10-13 12:29:55.432 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-10-13 12:29:55.737 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-13 12:29:57.132 [main] INFO  o.hibernate.tool.schema.internal.SchemaCreatorImpl - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@c8c84ed'
+2020-10-13 12:29:57.136 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:29:58.064 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-13 12:29:58.396 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-10-13 12:29:59.352 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:29:59.923 [main] INFO  o.s.b.test.mock.web.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2020-10-13 12:29:59.924 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2020-10-13 12:29:59.951 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Completed initialization in 27 ms
+2020-10-13 12:30:00.005 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-10-13 12:30:00.076 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-10-13 12:30:00.153 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-10-13 12:30:00.438 [main] INFO  controller.TransactionControllerTest - Started TransactionControllerTest in 9.398 seconds (JVM running for 11.355)
+2020-10-13 12:30:00.546 [main] INFO  o.s.b.test.mock.web.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2020-10-13 12:30:00.547 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Initializing Servlet ''
+2020-10-13 12:30:00.551 [main] INFO  o.s.test.web.servlet.TestDispatcherServlet - Completed initialization in 4 ms
+2020-10-13 12:30:00.797 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:00.849 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2020-10-13 12:30:01.169 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.192 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.235 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.245 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.254 [main] INFO  c.t.transaction.controller.TransactionController - Start method getPositionList
+2020-10-13 12:30:01.292 [main] INFO  c.t.transaction.controller.TransactionController - Start method getTranactionList
+2020-10-13 12:30:01.313 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.324 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.355 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.392 [main] ERROR c.t.t.service.impl.TransactionServiceImpl - Transaction not exist with tradeId:
+2020-10-13 12:30:01.401 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.404 [main] ERROR c.t.t.service.impl.TransactionServiceImpl - Transaction not exist with tradeId:
+2020-10-13 12:30:01.409 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.424 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.433 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.436 [main] ERROR c.t.t.service.impl.TransactionServiceImpl - Operation type error:
+2020-10-13 12:30:01.438 [main] INFO  c.t.transaction.controller.TransactionController - Start method getPositionList
+2020-10-13 12:30:01.443 [main] INFO  c.t.transaction.controller.TransactionController - Start method getTranactionList
+2020-10-13 12:30:01.453 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.468 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.478 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.489 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.504 [main] INFO  c.t.transaction.controller.TransactionController - Start method saveTransactionByDto
+2020-10-13 12:30:01.506 [main] ERROR c.t.t.service.impl.TransactionServiceImpl - Operation type error:
+2020-10-13 12:30:01.510 [main] INFO  c.t.transaction.controller.TransactionController - Start method getPositionBySecurityCode
+2020-10-13 12:30:01.550 [Thread-5] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-13 12:30:01.555 [Thread-5] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-13 12:30:01.556 [Thread-5] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-10-13 12:30:01.701 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2020-10-13 12:30:01.721 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
